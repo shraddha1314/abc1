@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registrationwithvalidation.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="reg_form">
+        <h1>LOGIN FORM</h1>
+        <form action="">
+            <label for="first_name" id="first_name">First Name</label>
+            <input type="text" id="first1_name"><span id="name_error" style="color: blueviolet;"></span>
+            <br>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" onkeyup="checkPasswordStrength()">
+            <span id="password-strength"></span>
+
+            <input type="button" id="submit_btn" onclick="registration()">
+
+        </form>
+    </div>
+
+    <script>
+
+        function registration() {
+            var name = document.getElementById("first1_name").value;
+            
+
+           
+           
+           
+           
+
+            const regex = /\d/;
+
+
+            if (regex.test(name)) {
+                var text = "name contain alphabate only";
+                document.getElementById("name_error").innerHTML = text;
+            }
+            else {
+                var text = "";
+                document.getElementById("name_error").innerHTML = text;
+            }
+
+        }
+
+
+        function checkPasswordStrength() {
+    const password = document.getElementById('password').value;
+    const strengthMeter = document.getElementById('password-strength');
+    const strength = calculatePasswordStrength(password);
+    const strengthText = getStrengthText(strength);
+  
+    strengthMeter.textContent = strengthText;
+  }
+  
+
+  function getStrengthText(strength) {
+    // Convert the strength value to a text representation
+    switch (strength) {
+      case 0:
+        return 'Very Weak';
+      case 1:
+        return 'Weak';
+      case 2:
+        return 'Medium';
+      case 3:
+        return 'Strong';
+      default:
+        return '';
+    }
+  }
+  
+  function calculatePasswordStrength(password) {
+    let strength = 0;
+  
+    // Check the length of the password
+    if (password.length >= 8) {
+      strength += 1;
+    }
+  
+    // Check for lowercase letters
+    if (/[a-z]/.test(password)) {
+      strength += 1;
+    }
+  
+    // Check for uppercase letters
+    if (/[A-Z]/.test(password)) {
+      strength += 1;
+    }
+  
+    // Check for digits
+    if (/\d/.test(password)) {
+      strength += 1;
+    }
+  
+    // Check for special characters
+    if (/[^A-Za-z0-9]/.test(password)) {
+      strength += 1;
+    }
+  
+    return strength;
+  }
+  
+
+
+
+
+    </script>
+</body>
+
+</html>
