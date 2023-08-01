@@ -1,0 +1,279 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+3 of 11
+(no subject)
+Inbox
+
+Shraddha Nalawade
+Mon, Jul 31, 8:23 PM (5 hours ago)
+to me
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    font: italic;
+    font-size: 60px;
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+#nav{
+    height: 90px;
+    padding: 0 70px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 35px;
+    margin-right: 200px;
+}
+#nav-prt1{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+
+}
+#nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+#nav-prt2 i{
+    margin-right: 60px;
+    font-size: 23px;
+    font-weight: 400;
+   
+}
+#content{
+    width: 100%;
+    height: calc(100% - 90px);
+    position: relative;
+    display: flex;
+   
+}
+#left{
+    height: 100%;
+    width: 35%;
+    padding: 100px 120px;
+
+}
+#left h5{
+    font-size: 70px;
+    padding: 19px;
+    text-transform: uppercase;
+}
+#left p{
+    font-size: 20px;
+    padding: 19px;
+}
+#right{
+    height: 100%;
+    width: 65%;
+    position: relative;
+    padding: 150px 70px;
+    white-space:nowrap;
+    overflow-x: auto;
+
+}
+
+
+
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+#left button{
+    padding:10px;
+    margin:19px;
+    background-color: rgb(11, 11, 11);
+    text-transform: uppercase;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    color: white;
+}
+.elem{
+
+    height: 580px;
+    width: 450px;
+    background-color: white;
+    position: relative;
+    font-weight: 100;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgbg(0,0,0,0.3);
+    display: inline-block;
+}
+.elem img{
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+    
+
+}
+.elem button{
+    position: absolute;
+    bottom: 70px;
+    right: 5px;
+    background-color: #adc1c7;
+    padding: 10px 30px;
+    border: #c7ccce;
+    border-radius: 5px 5px;
+    margin-left: 10px;
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+}
+.elem h5{
+    font-size: 20px;
+    position: absolute;
+    bottom: 6;
+    right: 0;
+    background-color: #adc1c7;
+    padding: 1px 30px;
+    border-radius: 10px;
+    font-weight: 200;
+}
+.elem h4{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    border-radius: 10px;
+    
+    padding: 1px 30px;
+}
+.elem button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+html
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="shoes.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav-prt1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png"
+                    alt="">
+                <h4>Home</h4>
+                <h4>Men</h4>
+                <h4>Women</h4>
+                <h4>Collection</h4>
+                <h4>Contact</h4>
+            </div>
+            <div id="nav-prt2">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+        <div id="content">
+            <div id="left">
+                <h5>Nike Limited Edition</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aut provident dignissimos
+                    laboriosam, voluptate atque perspiciatis cum porro consequatur et aperiam neque quaerat officiis
+                    asperiores repudiandae ex mollitia ipsam ipsa.</p>
+                <button>Shop now</button>
+            </div>
+            <div id="right">
+                <div class="elem">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button class="one">ADD TO CART</button>
+                </div>
+
+
+
+                <div class="elem">
+                    <img src="https://media.istockphoto.com/id/1402277533/photo/silver-sneakers-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=ONbSdlFkyCdwl43k0JnTfNWHT8_UKUpOeZCS9Wwdtvc="
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button>ADD TO CART</button>
+                </div>
+
+
+
+                <div class="elem">
+                    <img src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=is&k=20&c=jCdeOPM3ggzZ18cllvoNkARAg8TK4x1VN03t3Z41JiQ="
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button>ADD TO CART</button>
+                </div>
+
+                <div class="elem">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button>ADD TO CART</button>
+                </div>
+
+                <div class="elem">
+                    <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="elem">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h4>LeBron Shoues(Teams)</h4>
+                    <h5>Men's basketball shoes</h5>
+                    <button>ADD TO CART</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
+
+
